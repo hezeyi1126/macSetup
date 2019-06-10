@@ -1,0 +1,10 @@
+几步解决Change partition type to AF not a HFS partition
+昨天写入硬盘的时候出现几步解决Change partition type to AF not a HFS partition
+先贴出解决方法 
+1、cmd
+2、diskpart
+3、list disk           (查看硬盘)
+4、select disk n （选择硬盘，n是数字）
+5、list partition   （查看分区）
+6、select  partition n  （那块没有格式化的分区）
+7、 set id=af
